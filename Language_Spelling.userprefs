@@ -1,15 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Dutch_Spelling/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spelling.Core/Views/Learn_Vocabulary.cs">
     <Files>
-      <File FileName="Dutch_Learner/Views/Dutch_LearnerViewController.cs" Line="40" Column="43" />
-      <File FileName="Dutch_Learner/Views/Dutch_LearnerViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="Dutch_Learner/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Dutch_Learner/Views/Learn_Spelling.cs" Line="1" Column="1" />
-      <File FileName="Dutch_Learner/Views/Learn_Spelling.designer.cs" Line="1" Column="1" />
-      <File FileName="Dutch_Spelling/Views/Learn_Vocabulary.cs" Line="1" Column="1" />
-      <File FileName="Dutch_Spelling/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="Dutch_Spelling/AppDelegate.cs" Line="30" Column="13" />
       <File FileName="Dutch_Spelling/Info.plist" />
+      <File FileName="Spelling.Core/Views/WordView.cs" Line="14" Column="25" />
+      <File FileName="Spelling.Core/Views/AnswerView.cs" Line="394" Column="1" />
+      <File FileName="Spelling.Core/Models/Vocabulary.cs" Line="5" Column="28" />
+      <File FileName="Spelling.Core/Models/Word.cs" Line="9" Column="25" />
+      <File FileName="Dutch_Spelling/Resources/vocabulary/Words.xml" Line="149" Column="28" />
+      <File FileName="Spelling.Core/Views/Learn_Vocabulary.cs" Line="130" Column="10" />
+      <File FileName="Spelling.Core/Views/HealthStatus.cs" Line="31" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,606 +1,569 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">>
 	<Word>
-		<English>Yellow</English>
+		<Native>Yellow</Native>
 		<Target>Geel</Target>
-		<Used>false</Used>
 	</Word>
 	<Word>
-		<English>Writting</English>
-		<Target>Schrijven</Target>
-		<Used>false</Used>
+		<Native>Writting</Native>
+		<Target>Schrijven</Target>		
 	</Word>
 	<Word>
-		<English>Write</English>
-		<Target>Schrijft</Target>
-		<Used>false</Used>
+		<Native>Write</Native>
+		<Target>Schrijft</Target>		
 	</Word>
 	<Word>
-		<English>Woman</English>
-		<Target>Vrouw</Target>
-		<Used>false</Used>
+		<Native>Woman</Native>
+		<Target>Vrouw</Target>		
 	</Word>
 	<Word>
-		<English>White</English>
-		<Target>Wit</Target>
-		<Used>false</Used>
+		<Native>White</Native>
+		<Target>Wit</Target>		
 	</Word>
 	<Word>
-		<English>Water</English>
-		<Target>Water</Target>
-		<Used>false</Used>
+		<Native>Water</Native>
+		<Target>Water</Target>		
 	</Word>
 	<Word>
-		<English>Walk</English>
-		<Target>Loopt</Target>
-		<Used>false</Used>
+		<Native>Walk</Native>
+		<Target>Loopt</Target>		
 	</Word>
 	<Word>
-		<English>Two</English>
-		<Target>Twee</Target>
-		<Used>false</Used>
+		<Native>Two</Native>
+		<Target>Twee</Target>		
 	</Word>
 	<Word>
-		<English>Three</English>
-		<Target>Drie</Target>
-		<Used>false</Used>
+		<Native>Three</Native>
+		<Target>Drie</Target>		
 	</Word>
 	<Word>
-		<English>This</English>
-		<Target>Dit</Target>
-		<Used>false</Used>
+		<Native>This</Native>
+		<Target>Dit</Target>		
 	</Word>
 	<Word>
-		<English>Ten</English>
-		<Target>Tien</Target>
-		<Used>false</Used>
+		<Native>Ten</Native>
+		<Target>Tien</Target>		
 	</Word>
 	<Word>
-		<English>Teacher</English>
-		<Target>Leraar</Target>
-		<Used>false</Used>
+		<Native>Teacher</Native>
+		<Target>Leraar</Target>		
 	</Word>
 	<Word>
-		<English>Tables</English>
-		<Target>Tafels</Target>
-		<Used>false</Used>
+		<Native>Tables</Native>
+		<Target>Tafels</Target>		
 	</Word>
 	<Word>
-		<English>Swimming</English>
-		<Target>Zwemmen</Target>
-		<Used>false</Used>
+		<Native>Swimming</Native>
+		<Target>Zwemmen</Target>		
 	</Word>
 	<Word>
-		<English>Swim</English>
-		<Target>Zwemt</Target>
-		<Used>false</Used>
+		<Native>Swim</Native>
+		<Target>Zwemt</Target>		
 	</Word>
 	<Word>
-		<English>Sleeps</English>
-		<Target>Slaapt</Target>
-		<Used>false</Used>
+		<Native>Sleeps</Native>
+		<Target>Slaapt</Target>		
 	</Word>
 	<Word>
-		<English>Sky</English>
-		<Target>Lucht</Target>
-		<Used>false</Used>
+		<Native>Sky</Native>
+		<Target>Lucht</Target>		
 	</Word>
 	<Word>
-		<English>Six</English>
-		<Target>Zes</Target>
-		<Used>false</Used>
+		<Native>Six</Native>
+		<Target>Zes</Target>		
 	</Word>
 	<Word>
-		<English>Shoe</English>
-		<Target>Schoenen</Target>
-		<Used>false</Used>
+		<Native>Shoe</Native>
+		<Target>Schoenen</Target>		
 	</Word>
 	<Word>
-		<English>Shirt</English>
-		<Target>Overhemd</Target>
-		<Used>false</Used>
+		<Native>Shirt</Native>
+		<Target>Overhemd</Target>		
 	</Word>
 	<Word>
-		<English>Seven</English>
-		<Target>Zeven</Target>
-		<Used>false</Used>
+		<Native>Seven</Native>
+		<Target>Zeven</Target>		
 	</Word>
 	<Word>
-		<English>Sandwich</English>
-		<Target>Broodje</Target>
-		<Used>false</Used>
+		<Native>Sandwich</Native>
+		<Target>Broodje</Target>		
 	</Word>
 	<Word>
-		<English>Run</English>
-		<Target>Rent</Target>
-		<Used>false</Used>
+		<Native>Run</Native>
+		<Target>Rent</Target>		
 	</Word>
 	<Word>
-		<English>Red</English>
-		<Target>Rood</Target>
-		<Used>false</Used>
+		<Native>Red</Native>
+		<Target>Rood</Target>		
 	</Word>
 	<Word>
-		<English>Read</English>
-		<Target>Leest</Target>
-		<Used>false</Used>
+		<Native>Read</Native>
+		<Target>Leest</Target>		
 	</Word>
 	<Word>
-		<English>Police Officer</English>
-		<Target>Politieagent</Target>
-		<Used>false</Used>
+		<Native>Police Officer</Native>
+		<Target>Politieagent</Target>		
 	</Word>
 	<Word>
-		<English>Pen</English>
-		<Target>Pen</Target>
-		<Used>false</Used>
+		<Native>Pen</Native>
+		<Target>Pen</Target>		
 	</Word>
 	<Word>
-		<English>One</English>
-		<Target>Een</Target>
-		<Used>false</Used>
+		<Native>One</Native>
+		<Target>Een</Target>		
 	</Word>
 	<Word>
-		<English>No</English>
-		<Target>Geen</Target>
-		<Used>false</Used>
+		<Native>No</Native>
+		<Target>Geen</Target>		
 	</Word>
 	<Word>
-		<English>Nine</English>
-		<Target>Negen</Target>
-		<Used>false</Used>
+		<Native>Nine</Native>
+		<Target>Negen</Target>		
 	</Word>
 	<Word>
-		<English>News Paper</English>
-		<Target>Krant</Target>
-		<Used>false</Used>
+		<Native>News Paper</Native>
+		<Target>Krant</Target>		
 	</Word>
 	<Word>
-		<English>Moon</English>
-		<Target>Maan</Target>
-		<Used>false</Used>
+		<Native>Moon</Native>
+		<Target>Maan</Target>		
 	</Word>
 	<Word>
-		<English>Milk</English>
-		<Target>Melk</Target>
-		<Used>false</Used>
+		<Native>Milk</Native>
+		<Target>Melk</Target>		
 	</Word>
 	<Word>
-		<English>Men</English>
-		<Target>Mannen</Target>
-		<Used>false</Used>
+		<Native>Men</Native>
+		<Target>Mannen</Target>		
 	</Word>
 	<Word>
-		<English>Man</English>
-		<Target>Man</Target>
-		<Used>false</Used>
+		<Native>Man</Native>
+		<Target>Man</Target>		
 	</Word>
 	<Word>
-		<English>Learner</English>
-		<Target>Leerling</Target>
-		<Used>false</Used>
+		<Native>Learner</Native>
+		<Target>Leerling</Target>		
 	</Word>
 	<Word>
-		<English>Keys</English>
-		<Target>Sleutels</Target>
-		<Used>false</Used>
+		<Native>Keys</Native>
+		<Target>Sleutels</Target>		
 	</Word>
 	<Word>
-		<English>Horse</English>
+		<Native>Horse</Native>
 		<Target>Paard</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Hello</English>
+		<Native>Hello</Native>
 		<Target>Hallo</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Green</English>
+		<Native>Green</Native>
 		<Target>Groen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Grass</English>
+		<Native>Grass</Native>
 		<Target>Gras</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Girls</English>
+		<Native>Girls</Native>
 		<Target>Meisjes</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Girl</English>
+		<Native>Girl</Native>
 		<Target>Meisje</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Four</English>
+		<Native>Four</Native>
 		<Target>Vier</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Flower</English>
+		<Native>Flower</Native>
 		<Target>Bloem</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Five</English>
+		<Native>Five</Native>
 		<Target>Vijf</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Fish</English>
+		<Native>Fish</Native>
 		<Target>Vissen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Fish</English>
+		<Native>Fish</Native>
 		<Target>Vis</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Eight</English>
+		<Native>Eight</Native>
 		<Target>Acht</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Egg</English>
+		<Native>Egg</Native>
 		<Target>Ei</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Eat</English>
+		<Native>Eat</Native>
 		<Target>Eeten</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Eat</English>
+		<Native>Eat</Native>
 		<Target>Eet</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Drink</English>
+		<Native>Drink</Native>
 		<Target>Drinkt</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Dog</English>
+		<Native>Dog</Native>
 		<Target>Hond</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Doctor</English>
+		<Native>Doctor</Native>
 		<Target>Dokter</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Cup</English>
+		<Native>Cup</Native>
 		<Target>Kopje</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Cooks</English>
+		<Native>Cooks</Native>
 		<Target>Kookt</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Cook</English>
+		<Native>Cook</Native>
 		<Target>Koken</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Coffee</English>
+		<Native>Coffee</Native>
 		<Target>Koffie</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Children</English>
+		<Native>Children</Native>
 		<Target>Kinderen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Chairs</English>
+		<Native>Chairs</Native>
 		<Target>Stoelen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Cat</English>
+		<Native>Cat</Native>
 		<Target>Kat</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Car</English>
+		<Native>Car</Native>
 		<Target>Auto</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Bread</English>
+		<Native>Bread</Native>
 		<Target>Brood</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Boys</English>
+		<Native>Boys</Native>
 		<Target>Jougens</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Boy</English>
+		<Native>Boy</Native>
 		<Target>Joungen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Bowl</English>
+		<Native>Bowl</Native>
 		<Target>Kom</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Book</English>
+		<Native>Book</Native>
 		<Target>Boek</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Blue</English>
+		<Native>Blue</Native>
 		<Target>Blauw</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Blouse</English>
+		<Native>Blouse</Native>
 		<Target>Bloes</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Black</English>
+		<Native>Black</Native>
 		<Target>Zwart</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Bike</English>
+		<Native>Bike</Native>
 		<Target>Fiets</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Apple</English>
+		<Native>Apple</Native>
 		<Target>Appel</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-		<English>Adults</English>
+		<Native>Adults</Native>
 		<Target>Volwassenen</Target>
-		<Used>false</Used>
+		
 	</Word>
 	<Word>
-    <English>an</English>
+    <Native>an</Native>
     <Target>een</Target>
-    <Used>false</Used>
+    
   </Word>
  
    <Word>
-    <English>also</English>
+    <Native>also</Native>
     <Target>ook</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>find</English>
+    <Native>find</Native>
     <Target>vinden</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>go</English>
+    <Native>go</Native>
     <Target>gaan</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>he</English>
+    <Native>he</Native>
     <Target>hij</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>am</English>
+    <Native>am</Native>
     <Target>am</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>like</English>
+    <Native>like</Native>
     <Target>zoals</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>one</English>
+    <Native>one</Native>
     <Target>een</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>new</English>
+    <Native>new</Native>
     <Target>nieuw</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>often</English>
+    <Native>often</Native>
     <Target>vaak</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>other</English>
+    <Native>other</Native>
     <Target>ander</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>place</English>
+    <Native>place</Native>
     <Target>plaats</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>so</English>
+    <Native>so</Native>
     <Target>zo</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>tell</English>
+    <Native>tell</Native>
     <Target>vertellen</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>them</English>
+    <Native>them</Native>
     <Target>ze</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>think</English>
+    <Native>think</Native>
     <Target>denken</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>up</English>
+    <Native>up</Native>
     <Target>naar boven</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>what</English>
+    <Native>what</Native>
     <Target>wat</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>why</English>
+    <Native>why</Native>
     <Target>waarom</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>after</English>
+    <Native>after</Native>
     <Target>na</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>always</English>
+    <Native>always</Native>
     <Target>altijd</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>but</English>
+    <Native>but</Native>
     <Target>maar</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>first</English>
+    <Native>first</Native>
     <Target>eerste</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>good</English>
+    <Native>good</Native>
     <Target>goed</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>hello</English>
+    <Native>hello</Native>
     <Target>hallo</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>if</English>
+    <Native>if</Native>
     <Target>indien</Target>
-    <Used>false</Used>
+    
   </Word>
 
  <Word>
-    <English>little</English>
+    <Native>little</Native>
     <Target>klein</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>more</English>
+    <Native>more</Native>
     <Target>meer</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>no</English>
+    <Native>no</Native>
     <Target>geen</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>on</English>
+    <Native>on</Native>
     <Target>op</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>our</English>
+    <Native>our</Native>
     <Target>onze</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>please</English>
+    <Native>please</Native>
     <Target>alstublieft</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>some</English>
+    <Native>some</Native>
     <Target>sommige</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>thank you</English>
+    <Native>thank you</Native>
     <Target>dank u</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>then</English>
+    <Native>then</Native>
     <Target>dan</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>this</English>
+    <Native>this</Native>
     <Target>dit</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>us</English>
+    <Native>us</Native>
     <Target>ons</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>when</English>
+    <Native>when</Native>
     <Target>wanneer</Target>
-    <Used>false</Used>
+    
   </Word>
 
    <Word>
-    <English>with</English>
+    <Native>with</Native>
     <Target>met</Target>
-    <Used>false</Used>
+    
   </Word>
 </ArrayOfWord>

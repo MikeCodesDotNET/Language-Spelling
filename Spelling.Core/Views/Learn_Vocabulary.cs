@@ -28,6 +28,12 @@ namespace Dutch_Spelling
         {
             base.ViewDidLoad();
 			           
+            if (_answerView == null)
+                _answerView = new AnswerView(new RectangleF(0, 180, this.View.Bounds.Width, 220));
+            this.View.Add(_answerView);
+            _answerView.Hidden = true;
+            _answerView.ValidAnswer += HandleValidAnswer;
+
             _countdownTimer = new System.Timers.Timer();
             _countdownTimer.Interval = 1000;
             _countdownTimer.Elapsed += HandleCountDownElapsed;           
@@ -41,21 +47,23 @@ namespace Dutch_Spelling
 
             GetNextVocabulary();
 
-            if (_answerView == null)
-                _answerView = new AnswerView(new RectangleF(0, 180, this.View.Bounds.Width, 220));
-            this.View.Add(_answerView);
-            _answerView.Hidden = true;
-            _answerView.ValidAnswer += HandleValidAnswer;
-
             if (_healthStatus == null)
                 _healthStatus = new HealthStatus(new RectangleF(this.View.Bounds.Width - 120, 30, 120, 35));
             this.Add(_healthStatus);
         }
 
-        void HandleValidAnswer ()
+        void HandleValidAnswer (bool value)
         {
-            btnSkipTimer.SetTitle("Next", UIControlState.Normal);
-            btnSkipTimer.BackgroundColor = MicJames.ExtensionMethods.ToUIColor("53D769");
+            if (value == true)
+            {
+                btnSkipTimer.SetTitle("Next", UIControlState.Normal);
+                btnSkipTimer.BackgroundColor = MicJames.ExtensionMethods.ToUIColor("53D769");
+            }
+            else
+            {
+                btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
+                btnSkipTimer.BackgroundColor = MicJames.ExtensionMethods.ToUIColor("FECB2F");
+            }
         }
 
         void ShowAnswerView()
@@ -113,27 +121,35 @@ namespace Dutch_Spelling
             if (_wordList == null)
                 _wordList = VocabManager.ImportWords();
             var index = RandomNumberBetween(0, _wordList.Count);
-            var native = new Vocabulary("English", _wordList[index].English);
-            var target = new Vocabulary("Dutch", _wordList[index].Target);
-            RefreshWordViews(native, target);
+
+            var vocab = new Vocabulary(_wordList[index]);
+            RefreshWordViews(vocab);
         }
 
-        void RefreshWordViews(Vocabulary native, Vocabulary target)
+        void RefreshWordViews(Vocabulary vocab)
         {
+            _currentWord = vocab.Word;
+            //Native probably being english!
             if (_nativeWord == null)
             {
-                _nativeWord = new WordView(new RectangleF(0, 0, 320, 30), native);
-                this.View.Add(_nativeWord);
+                if (vocab.NativeLanguage == null)
+                    vocab.NativeLanguage = "English"; //TODO not hard code this
+                _nativeWord = new WordView(new RectangleF(0, 0, 320, 30), vocab.NativeLanguage, vocab.Word.Native);
+                this.View.Add(_nativeWord);                              
             }
       
+            //Target being Dutch, French etc..
             if (_targetWord == null)
             {
-                _targetWord = new WordView(new RectangleF(0, 160, 320, 30), target);            
+                if (vocab.TargetLanguage == null)
+                    vocab.TargetLanguage = "Dutch"; //TODO Not hard code this
+
+                _targetWord = new WordView(new RectangleF(0, 160, 320, 30), vocab.TargetLanguage, vocab.Word.Target);            
                 this.View.Add(_targetWord);
             }
                       
-            _targetWord.Update(target);
-            _nativeWord.Update(native);
+            _targetWord.Update(vocab.Word.Target);
+            _nativeWord.Update(vocab.Word.Native);
 
             _countDownValue = 5;
             _countdownTimer.Start();
@@ -144,7 +160,7 @@ namespace Dutch_Spelling
         /// </summary>
         void TestAgainstNative()
         {
-            _testNative = true;
+            _testNative = true;           
 
             InvokeOnMainThread(delegate
             {
@@ -162,6 +178,7 @@ namespace Dutch_Spelling
                 {
                     btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
                     btnSkipTimer.BackgroundColor = MicJames.ExtensionMethods.ToUIColor("FECB2F");
+                    _answerView.SetTargetWord(_currentWord.Target);
                     ShowAnswerView();
                 });
             });
@@ -205,6 +222,7 @@ namespace Dutch_Spelling
                 },() =>{
                     btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
                     btnSkipTimer.BackgroundColor = MicJames.ExtensionMethods.ToUIColor("FECB2F");
+                    _answerView.SetTargetWord(_currentWord.Native);
                     ShowAnswerView();
                 });
             });
@@ -247,6 +265,8 @@ namespace Dutch_Spelling
         int _countDownValue = 5;
         List<Word> _wordList;
         bool _testNative = false;
+
+        Word _currentWord;
     }
 }
 

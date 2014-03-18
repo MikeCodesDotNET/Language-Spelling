@@ -3,24 +3,28 @@ using System.Drawing;
 using MonoTouch.UIKit;
 using MonoTouch.CoreGraphics;
 using Spelling.Core.Models;
+using System.Globalization;
 
 namespace Spelling.Core.Views
 {
     public class WordView : UIView
     {       
-        public WordView(RectangleF frame, Vocabulary vocab)
+        public WordView(RectangleF frame, string title, string value)
         {
             this.Init();
             this.Frame = frame;
 
-            _vocab = vocab;
+            TextInfo textInfo = new CultureInfo("en-US",false).TextInfo;
+
+            title = textInfo.ToTitleCase(title);
+            value = textInfo.ToTitleCase(value);
 
             //Title label
             _title = new UILabel(new RectangleF(0, 45, frame.Width, 50));
             _title.TextAlignment = UITextAlignment.Center;
             _title.TextColor = MicJames.ExtensionMethods.ToUIColor("3C3C3C");
             _title.Font = UIFont.FromName("Raleway-SemiBold", 32);
-            _title.Text = _vocab.Language;
+            _title.Text = title;
             this.Add(_title);
 
             //Word label
@@ -28,13 +32,13 @@ namespace Spelling.Core.Views
             _word.TextAlignment = UITextAlignment.Center;
             _word.TextColor = MicJames.ExtensionMethods.ToUIColor("3C3C3C");
             _word.Font = UIFont.FromName("Raleway-Regular", 32);
-            _word.Text = _vocab.Word;
+            _word.Text = value;
             this.Add(_word);
         }
 
-        public void Update(Vocabulary vocab)
+        public void Update(string value)
         {
-            _word.Text = vocab.Word;
+            _word.Text = value;
             _word.Alpha = 1.0f;
         }
 
@@ -71,7 +75,6 @@ namespace Spelling.Core.Views
 
         UILabel _title;
         UILabel _word;
-        Vocabulary _vocab;
     }
 }
 

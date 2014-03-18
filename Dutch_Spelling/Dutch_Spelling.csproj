@@ -114,10 +114,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Views\Learn_Vocabulary.cs" />
-    <Compile Include="Views\Learn_Vocabulary.designer.cs">
-      <DependentUpon>Learn_Vocabulary.cs</DependentUpon>
-    </Compile>
     <Compile Include="ExtensionMethods.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -126,9 +122,6 @@
     <Folder Include="Custom Controls\" />
     <Folder Include="Resources\fonts\" />
     <Folder Include="Resources\vocabulary\" />
-  </ItemGroup>
-  <ItemGroup>
-    <InterfaceDefinition Include="Views\Learn_Vocabulary.xib" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

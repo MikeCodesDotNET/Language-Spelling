@@ -28,6 +28,7 @@ namespace Spelling.Core.Views
         List<UIButton> _buttonsUsedInAnswer;
         List<RectangleF> _defaultPositions;
 
+        string _targetWord;
 
         public AnswerView(RectangleF rect)
         {
@@ -197,6 +198,61 @@ namespace Spelling.Core.Views
             }
         }
 
+        public void SetTargetWord(string targetWord)
+        {       
+            _targetWord = targetWord;
+            int targetLength = targetWord.Length;
+            int remainingLength = 11 - targetLength;
+
+            char[] letters = ScrambleWord(targetWord.ToLower()).ToCharArray();
+
+            while (remainingLength >= 1)
+            {
+                var i = letters.Length;
+                Array.Resize(ref letters, i + 1);
+                letters[i] = GetLetter();
+                string word = new string(letters);
+                var words = ScrambleWord(word);
+                letters = words.ToCharArray();
+                remainingLength = 12 - letters.Length;
+            }
+            UpdateButtonTitles(letters);
+        }
+
+        static Random random = new Random();
+        char GetLetter()
+        {
+            int num = random.Next(0, 26);
+            char letter = (char)('a' + num);
+            return letter;
+        }
+
+        string ScrambleWord(string word) 
+        {
+            string iword = word.ToLower();
+            Random rnd = new Random();
+            int rnd_position;
+            int wordLength = iword.Length;
+
+            string scrambledWord = "";
+            string[] letter = new string[wordLength];
+
+            for (int i = 0; i <= (wordLength-1); i++) {
+                repeat:
+                rnd_position = Convert.ToInt16((wordLength) * rnd.NextDouble());
+
+                if (rnd_position == wordLength || letter[rnd_position] != null) {
+                    goto repeat;
+                } else {
+                    letter[rnd_position] = word.Substring(i,1);
+                }
+            }
+            for (int j = 0; j <= (wordLength-1); j++) {
+                scrambledWord += letter[j];
+            }
+            return scrambledWord;
+        }
+
         void HandleButtonTouchUpInside (object sender, EventArgs e)
         {
             if (_buttonsUsedInAnswer == null)
@@ -224,11 +280,6 @@ namespace Spelling.Core.Views
                     {
                     });
                 }
-
-                if (AnswerIsValid() == true)
-                {                   
-                    ValidAnswer();
-                }
             }
         }
 
@@ -247,6 +298,22 @@ namespace Spelling.Core.Views
             AdjustPositions();
         }
        
+        void UpdateButtonTitles(char[] value)
+        {
+            _button1.SetTitle(value[0].ToString(), UIControlState.Normal);
+            _button2.SetTitle(value[1].ToString(), UIControlState.Normal);
+            _button3.SetTitle(value[2].ToString(), UIControlState.Normal);
+            _button4.SetTitle(value[3].ToString(), UIControlState.Normal);
+            _button5.SetTitle(value[4].ToString(), UIControlState.Normal);
+            _button6.SetTitle(value[5].ToString(), UIControlState.Normal);
+            _button7.SetTitle(value[6].ToString(), UIControlState.Normal);
+            _button8.SetTitle(value[7].ToString(), UIControlState.Normal);
+            _button9.SetTitle(value[8].ToString(), UIControlState.Normal);
+            _button10.SetTitle(value[9].ToString(), UIControlState.Normal);
+            _button11.SetTitle(value[10].ToString(), UIControlState.Normal);
+            _button12.SetTitle(value[11].ToString(), UIControlState.Normal);
+        }
+
         UIButton ButtonBuilder(ref UIButton button)
         {
             button.Tag = _buttonCount;
@@ -267,6 +334,16 @@ namespace Spelling.Core.Views
                 _answer = _answer + b.Title(UIControlState.Normal);
             }
             _label.Text = _answer;
+
+            if (AnswerIsValid() == true)
+            {                   
+                ValidAnswer(true);
+            }
+            else
+            {
+                ValidAnswer(false);
+            }
+
         }
 
         void AdjustPositions()
@@ -314,7 +391,7 @@ namespace Spelling.Core.Views
 
         bool AnswerIsValid()
         {
-            if (_answer.Length == 8)
+            if (_answer.ToLower() == _targetWord.ToLower())
                 return true;
             return false;
         }
@@ -326,7 +403,7 @@ namespace Spelling.Core.Views
             return new RectangleF(a, 15, 28, 28);
         }
 
-        public delegate void ValidAnswerEventHandler();
+        public delegate void ValidAnswerEventHandler(bool value);
         public event ValidAnswerEventHandler ValidAnswer;
 
     }

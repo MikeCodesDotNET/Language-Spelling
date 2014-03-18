@@ -50,9 +50,16 @@
     <Compile Include="Models\Word.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="VocabManager.cs" />
+    <Compile Include="Views\Learn_Vocabulary.cs" />
+    <Compile Include="Views\Learn_Vocabulary.designer.cs">
+      <DependentUpon>Learn_Vocabulary.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\heart%402x.png" />
     <BundleResource Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\Learn_Vocabulary.xib" />
   </ItemGroup>
 </Project>

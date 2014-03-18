@@ -24,6 +24,10 @@ namespace Dutch_Spelling
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            NativeLanguage = "English";
+            TargetLanguage = "Dutch";
+
+
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 			
             viewController = new Learn_Vocabulary();
@@ -32,6 +36,10 @@ namespace Dutch_Spelling
 			
             return true;
         }
+
+        public static string NativeLanguage { get; set; }
+        public static string TargetLanguage { get; set; }
+
     }
 }
 
