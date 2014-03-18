@@ -8,7 +8,7 @@ using Spelling.Core.Models;
 using Spelling.Core.Views;
 using Spelling.Core;
 
-namespace Dutch_Spelling
+namespace Spelling.Dutch
 {
     public partial class Learn_Vocabulary : UIViewController
     {

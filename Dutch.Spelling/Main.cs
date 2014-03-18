@@ -5,7 +5,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Mindscape.Raygun4Net;
 
-namespace Dutch_Spelling
+namespace Spelling.Dutch
 {
     public class Application
     {

@@ -1,0 +1,31 @@
+# Version: 7.2.0.2 (58c3efa)
+# [first argument, ignore] # /Users/mike/Git Respositories/Language Spelling/Dutch.Spelling/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	"/Users/mike/Git Respositories/Language Spelling/Dutch.Spelling/obj/iPhoneSimulator/Debug/mtouch-cache" \
+	--nomanifest \
+	--nosign \
+	-sim \
+	"/Users/mike/Git Respositories/Language Spelling/Dutch.Spelling/bin/iPhoneSimulator/Debug/SpellingDutch.app" \
+	-r \
+	"/Users/mike/Git Respositories/Language Spelling/Spelling.Core/bin/Debug/Spelling.Core.dll" \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	"/Users/mike/Git Respositories/Language Spelling/Components/raygun4net-1.1.1/lib/ios/Mindscape.Raygun4Net.Xamarin.iOS.dll" \
+	-debug \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	"/Users/mike/Git Respositories/Language Spelling/Dutch.Spelling/bin/iPhoneSimulator/Debug/Dutch_Spelling.exe" \

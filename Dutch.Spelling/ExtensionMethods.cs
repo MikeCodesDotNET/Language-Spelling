@@ -1,7 +1,7 @@
 ﻿using System;
 using MonoTouch.UIKit;
 
-namespace Dutch_Spelling
+namespace Spelling.Dutch
 {
     public static class FontExensions
     {

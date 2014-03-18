@@ -7,7 +7,7 @@
 using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
-namespace Dutch_Spelling
+namespace Spelling.Dutch
 {
 	[Register ("Learn_Vocabulary")]
 	partial class Learn_Vocabulary
