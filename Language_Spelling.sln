@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dutch_Spelling", "Dutch_Spelling\Dutch_Spelling.csproj", "{43DFD5D1-AE2B-4E91-873A-6D0D8D1B9042}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spelling.Dutch", "Dutch_Spelling\Spelling.Dutch.csproj", "{43DFD5D1-AE2B-4E91-873A-6D0D8D1B9042}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spelling.Core.iOS", "Spelling.Core\Spelling.Core.iOS.csproj", "{32743DB6-5BFC-42CC-BDC4-1DA473C90616}"
 EndProject
@@ -41,6 +41,6 @@ Global
 		{43DFD5D1-AE2B-4E91-873A-6D0D8D1B9042}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Dutch_Spelling\Dutch_Spelling.csproj
+		StartupItem = Dutch_Spelling\Spelling.Dutch.csproj
 	EndGlobalSection
 EndGlobal
