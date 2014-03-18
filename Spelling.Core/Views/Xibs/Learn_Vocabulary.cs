@@ -43,13 +43,27 @@ namespace Spelling.Dutch
             btnSkipTimer.SetTitleColor(UIColor.White, UIControlState.Normal);
             btnSkipTimer.Font = UIFont.FromName("Raleway-SemiBold", 32);
 
-            btnSkipTimer.TouchUpInside += HandleBottomButtonTouchUpInside;
+            btnSkipTimer.TouchUpInside += HandleBottomButtonTouchUpInside;           
 
             GetNextVocabulary();
 
             if (_healthStatus == null)
                 _healthStatus = new HealthStatus(new RectangleF(this.View.Bounds.Width - 120, 30, 120, 35));
-            this.Add(_healthStatus);
+            _healthStatus.NoLifesRemain += HandleNoLifesRemain;
+            Add(_healthStatus);
+
+            var backButton = new UIButton(UIButtonType.RoundedRect);
+            backButton.Font = UIFont.FromName("Raleway-SemiBold", 18);
+            backButton.SetTitleColor(MicJames.ExtensionMethods.ToUIColor("646465"), UIControlState.Normal);
+            backButton.SetTitle("Back", UIControlState.Normal);
+            backButton.Frame = new RectangleF(0, 20, 80, 40);
+            Add(backButton);
+
+        }
+
+        void HandleNoLifesRemain ()
+        {
+            _lastAttempt = true;
         }
 
         void HandleValidAnswer (bool value)
@@ -73,6 +87,11 @@ namespace Spelling.Dutch
 
         void HandleBottomButtonTouchUpInside (object sender, EventArgs e)
         {
+            if (btnSkipTimer.Title(UIControlState.Normal) == "Skip")
+            {
+                _healthStatus.RemoveLife();
+            }
+
             if ((btnSkipTimer.Title(UIControlState.Normal) == "Skip") || (btnSkipTimer.Title(UIControlState.Normal) == "Next"))
             {
                 GetNextVocabulary(); 
@@ -80,18 +99,13 @@ namespace Spelling.Dutch
                 _answerView.Reset();
                 _answerView.Hidden = true;
 
-                if (_testNative == true)
-                {
+                if (_testNative == true)                    
                     RestoreViewFromTestAgainstNative();
-                }
                 else
-                {
-                    RestoreViewFromTestAgainTarget();                  
-                }
-            }           
+                    RestoreViewFromTestAgainTarget(); 
+            } 
         
-            if(btnSkipTimer.Title(UIControlState.Normal) == "Skip")
-                _healthStatus.RemoveLife();
+
         }
 
         void HandleCountDownElapsed (object sender, System.Timers.ElapsedEventArgs e)
@@ -261,6 +275,8 @@ namespace Spelling.Dutch
         AnswerView _answerView;
         HealthStatus _healthStatus;
 
+
+        bool _lastAttempt = false;
         System.Timers.Timer _countdownTimer;
         int _countDownValue = 5;
         List<Word> _wordList;

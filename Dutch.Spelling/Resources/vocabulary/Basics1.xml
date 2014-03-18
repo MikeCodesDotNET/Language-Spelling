@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Skill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Basics 1</Title>
+	<UserIsLearningLanguage>Dutch</UserIsLearningLanguage>
+	<UsersNativeLanguage>English</UsersNativeLanguage>
+	<ImageURl>http://static.memrise.com/garden/img/placeholders/course-1.png</ImageURl>
+	<Words>
+		<Word>
+			<Native>The</Native>
+			<Target>Het</Target>
+		</Word>
+		<Word>
+			<Native>I</Native>
+			<Target>Ik</Target>
+		</Word>
+		<Word>
+			<Native>Woman</Native>
+			<Target>Vrouw</Target>
+		</Word>
+		<Word>
+			<Native>Man</Native>
+			<Target>Man</Target>
+		</Word>
+		<Word>
+			<Native>Boy</Native>
+			<Target>Jongen</Target>
+		</Word>
+		<Word>
+			<Native>Girl</Native>
+			<Target>Meisje</Target>
+		</Word>
+		<Word>
+			<Native>This Is</Native>
+			<Target>Dit is</Target>
+		</Word>
+		<Word>
+			<Native>You Are</Native>
+			<Target>U bent</Target>
+		</Word>
+		<Word>
+			<Native>He</Native>
+			<Target>Hij</Target>
+		</Word>
+		<Word>
+			<Native>She</Native>
+			<Target>Ze</Target>
+		</Word>
+		<Word>
+			<Native>You</Native>
+			<Target>U</Target>
+		</Word>
+		<Word>
+			<Native>Water</Native>
+			<Target>Water</Target>
+		</Word>
+		<Word>
+			<Native>Milk</Native>
+			<Target>Melk</Target>
+		</Word>
+	</Words>
+</Skill>

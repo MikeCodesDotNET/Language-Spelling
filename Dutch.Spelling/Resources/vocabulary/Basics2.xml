@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Skill xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Title>Basics 2</Title>
+	<UserIsLearningLanguage>Dutch</UserIsLearningLanguage>
+	<UsersNativeLanguage>English</UsersNativeLanguage>
+	<ImageURl>http://static.memrise.com/garden/img/placeholders/course-1.png</ImageURl>
+	<Words>
+		<Word>
+			<Native>You</Native>
+			<Target>U</Target>
+		</Word>
+		<Word>
+			<Native>They</Native>
+			<Target>ze</Target>
+		</Word>
+		<Word>
+			<Native>They Are</Native>
+			<Target>Ze zijn</Target>
+		</Word>
+		<Word>
+			<Native>We Are</Native>
+			<Target>Wij zijn</Target>
+		</Word>
+		<Word>
+			<Native>Women</Native>
+			<Target>Vrouwen</Target>
+		</Word>
+		<Word>
+			<Native>Men</Native>
+			<Target>Mensen</Target>
+		</Word>
+		<Word>
+			<Native>The</Native>
+			<Target>De</Target>
+		</Word>
+		<Word>
+			<Native>Boys</Native>
+			<Target>Jongens</Target>
+		</Word>
+		<Word>
+			<Native>Girls</Native>
+			<Target>Meisjes</Target>
+		</Word>
+		<Word>
+			<Native>Book</Native>
+			<Target>Boek</Target>
+		</Word>
+		<Word>
+			<Native>Wine</Native>
+			<Target>Wijn</Target>
+		</Word>
+		<Word>
+			<Native>Letter</Native>
+			<Target>Brief</Target>
+		</Word>
+		<Word>
+			<Native>Newspaper</Native>
+			<Target>Krant</Target>
+		</Word>
+
+	</Words>
+</Skill>
