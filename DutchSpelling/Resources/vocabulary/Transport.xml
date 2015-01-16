@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Word>
+    <Native>car</Native>
+    <Target>auto</Target>
+  </Word>
+  <Word>
+    <Native>truck</Native>
+    <Target>vrachtwagen</Target>
+  </Word>
+  <Word>
+    <Native>motorbike</Native>
+    <Target>motorfiets</Target>
+  </Word>
+  <Word>
+    <Native>boat</Native>
+    <Target>boot</Target>
+  </Word>
+  <Word>
+    <Native>ship</Native>
+    <Target>schip</Target>
+  </Word>
+  <Word>
+    <Native>airplaine</Native>
+    <Target>airplaine</Target>
+  </Word>
+  <Word>
+    <Native>helicopter</Native>
+    <Target>helikopter</Target>
+  </Word>
+  <Word>
+    <Native>subway</Native>
+    <Target>metro</Target>
+  </Word>
+  <Word>
+    <Native>submarine</Native>
+    <Target>onderzeeër</Target>
+  </Word>
+  <Word>
+    <Native>train</Native>
+    <Target>trein</Target>
+  </Word>
+  <Word>
+    <Native>bicycle</Native>
+    <Target>fiets</Target>
+  </Word>
+</ArrayOfWord>

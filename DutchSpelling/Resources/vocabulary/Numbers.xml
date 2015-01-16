@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Word>
+    <Native>one</Native>
+    <Target>een</Target>
+  </Word>
+  <Word>
+    <Native>two</Native>
+    <Target>twee</Target>
+  </Word>
+  <Word>
+    <Native>three</Native>
+    <Target>drie</Target>
+  </Word>
+  <Word>
+    <Native>four</Native>
+    <Target>vier</Target>
+  </Word>
+  <Word>
+    <Native>five</Native>
+    <Target>vijf</Target>
+  </Word>
+  <Word>
+    <Native>six</Native>
+    <Target>zes</Target>
+  </Word>
+  <Word>
+    <Native>seven</Native>
+    <Target>zeven</Target>
+  </Word>
+  <Word>
+    <Native>eight</Native>
+    <Target>acht</Target>
+  </Word>
+  <Word>
+    <Native>nine</Native>
+    <Target>negen</Target>
+  </Word>
+  <Word>
+    <Native>ten</Native>
+    <Target>tien</Target>
+  </Word>
+</ArrayOfWord>
