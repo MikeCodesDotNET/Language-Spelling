@@ -1,6 +1,6 @@
-﻿using System;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
+using System;
+using UIKit;
+using Foundation;
 using System.IO;
 using System.Xml.Serialization;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Spelling.Core
             tableItems = items;
         }
 
-        public override int RowsInSection(UITableView tableView, int section)
+        public override nint RowsInSection(UITableView tableView, nint section)
         {
             return tableItems.Count;
         }

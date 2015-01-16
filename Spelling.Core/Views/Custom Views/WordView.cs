@@ -1,9 +1,8 @@
-﻿using System.Globalization;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using System.Globalization;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 using Spelling.Core;
-using System.Drawing;
 
 namespace Spelling.Core
 {
@@ -19,7 +18,7 @@ namespace Spelling.Core
 
         #region Public
 
-        public WordView(RectangleF frame, string title, string value)
+        public WordView(CGRect frame, string title, string value)
         {
             Init();
             Frame = frame;
@@ -31,7 +30,7 @@ namespace Spelling.Core
             value = textInfo.ToTitleCase(value);
 
             //Title label
-            _title = new UILabel(new RectangleF(0, 45, frame.Width, 50))
+            _title = new UILabel(new CGRect(0, 45, frame.Width, 50))
             {
                 TextAlignment = UITextAlignment.Center,
                 TextColor = "3C3C3C".ToUIColor(),
@@ -41,7 +40,7 @@ namespace Spelling.Core
             Add(_title);
 
             //Word label
-            _word = new UILabel(new RectangleF(0, 108, frame.Width, 59))
+            _word = new UILabel(new CGRect(0, 108, frame.Width, 59))
             {
                 TextAlignment = UITextAlignment.Center,
                 TextColor = "3C3C3C".ToUIColor(),

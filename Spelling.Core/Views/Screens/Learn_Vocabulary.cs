@@ -1,8 +1,7 @@
-﻿using System;
-using System.Drawing;
+using System;
+using CoreGraphics;
 using System.Timers;
-using MonoTouch.CoreGraphics;
-using MonoTouch.UIKit;
+using UIKit;
 using Spelling.Core;
 using Spelling.Core.Models;
 
@@ -32,7 +31,7 @@ namespace Spelling.Core.Views.Screens
             base.ViewDidAppear(animated);
 
             if(_answerView == null)
-                _answerView = new AnswerView(new RectangleF(0, 180, View.Bounds.Width, 220)) {Hidden = true};
+                _answerView = new AnswerView(new CGRect(0, 180, View.Bounds.Width, 220)) {Hidden = true};
 
             _answerView.Reset();
             _answerView.Hidden = true;
@@ -63,7 +62,7 @@ namespace Spelling.Core.Views.Screens
             var backButton = new UIButton(UIButtonType.RoundedRect) {Font = UIFont.FromName("Raleway-SemiBold", 18)};
             backButton.SetTitleColor("646465".ToUIColor(), UIControlState.Normal);
             backButton.SetTitle("Back", UIControlState.Normal);
-            backButton.Frame = new RectangleF(0, 20, 80, 40);
+            backButton.Frame = new CGRect(0, 20, 80, 40);
             backButton.TouchUpInside += delegate { DismissViewController(true, null); };
             Add(backButton);
 
@@ -71,7 +70,7 @@ namespace Spelling.Core.Views.Screens
                 DismissViewController(true, null)) {Direction = UISwipeGestureRecognizerDirection.Down,});
         }
 
-        public override void DismissViewController(bool animated, MonoTouch.Foundation.NSAction completionHandler)
+        public override void DismissViewController(bool animated, Action completionHandler)
         {
             _answerView.Alpha = 0;
             _targetWord.Alpha = 0;
@@ -187,7 +186,7 @@ namespace Spelling.Core.Views.Screens
             {
                 if (languagePack.NativeLanguage == null)
                     languagePack.NativeLanguage = Client.NativeLanguage;
-                _nativeWord = new WordView(new RectangleF(0, 0, View.Bounds.Width, 30), languagePack.NativeLanguage,
+                _nativeWord = new WordView(new CGRect(0, 0, View.Bounds.Width, 30), languagePack.NativeLanguage,
                     languagePack.SelectedWord.Native);
                 View.Add(_nativeWord);
             }
@@ -198,7 +197,7 @@ namespace Spelling.Core.Views.Screens
                 if (languagePack.TargetLanguage == null)
                     languagePack.TargetLanguage = Client.TargetLanguage;
 
-                _targetWord = new WordView(new RectangleF(0, 160, View.Frame.Width, 30), languagePack.TargetLanguage,
+                _targetWord = new WordView(new CGRect(0, 160, View.Frame.Width, 30), languagePack.TargetLanguage,
                     languagePack.SelectedWord.Target);
                 View.Add(_targetWord);
             }
@@ -226,7 +225,7 @@ namespace Spelling.Core.Views.Screens
                 UIView.Animate(0.6, 0, UIViewAnimationOptions.CurveEaseIn,
                     () =>
                     {
-                        _nativeWord.Frame = new RectangleF(0, 0, View.Frame.Width, 30);
+                        _nativeWord.Frame = new CGRect(0, 0, View.Frame.Width, 30);
                         _targetWord.Transform = transform;
                     }, () =>
                     {
@@ -249,7 +248,7 @@ namespace Spelling.Core.Views.Screens
                 UIView.Animate(0.5, 0, UIViewAnimationOptions.TransitionCurlUp,
                     () =>
                     {
-                        _nativeWord.Frame = new RectangleF(0, 0, 320, 30);
+                        _nativeWord.Frame = new CGRect(0, 0, 320, 30);
                         _targetWord.Transform = transform;
                     }, () =>
                     {
@@ -271,8 +270,8 @@ namespace Spelling.Core.Views.Screens
                 UIView.Animate(0.6, 0, UIViewAnimationOptions.TransitionCurlUp,
                     () =>
                     {
-                        _nativeWord.Frame = new RectangleF(0, -250, View.Frame.Width, 30);
-                        _targetWord.Frame = new RectangleF(0, 0, View.Frame.Width, 30);
+                        _nativeWord.Frame = new CGRect(0, -250, View.Frame.Width, 30);
+                        _targetWord.Frame = new CGRect(0, 0, View.Frame.Width, 30);
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
@@ -294,8 +293,8 @@ namespace Spelling.Core.Views.Screens
                 UIView.Animate(0.5, 0, UIViewAnimationOptions.TransitionCurlUp,
                     () =>
                     {
-                            _nativeWord.Frame = new RectangleF(0, 0, View.Frame.Width, 30);
-                            _targetWord.Frame = new RectangleF(0, 160, View.Frame.Width, 30);
+                            _nativeWord.Frame = new CGRect(0, 0, View.Frame.Width, 30);
+                            _targetWord.Frame = new CGRect(0, 160, View.Frame.Width, 30);
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("5", UIControlState.Normal);
@@ -307,7 +306,7 @@ namespace Spelling.Core.Views.Screens
         void BuildViews()
         {
             if (_answerView == null)
-                _answerView = new AnswerView(new RectangleF(0, 180, View.Bounds.Width, 220)) {Hidden = true};
+                _answerView = new AnswerView(new CGRect(0, 180, View.Bounds.Width, 220)) {Hidden = true};
             _answerView.ValidAnswer += HandleValidAnswer;
             View.Add(_answerView);
         }

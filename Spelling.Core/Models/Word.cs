@@ -1,4 +1,4 @@
-﻿namespace Spelling.Core.Models
+namespace Spelling.Core.Models
 {
     public class Word
     {

@@ -1,9 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
-using MonoTouch.CoreGraphics;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 using Spelling.Core;
 
 namespace Spelling.Core 
@@ -13,7 +12,7 @@ namespace Spelling.Core
     {
         #region Fields
         static readonly Random random = new Random();
-        readonly List<RectangleF> _defaultPositions;
+        readonly List<CGRect> _defaultPositions;
         readonly UILabel _label;
 
         string _answer = string.Empty;
@@ -26,7 +25,7 @@ namespace Spelling.Core
         #endregion
 
         #region Public
-        public AnswerView(RectangleF rect)
+        public AnswerView(CGRect rect)
         {
             var i = 0;
             while(i < 12)
@@ -42,7 +41,7 @@ namespace Spelling.Core
             Init();
             BackgroundColor = UIColor.Clear;
 
-            _label = new UILabel(new RectangleF(25, 10, rect.Width - 50, 40));
+            _label = new UILabel(new CGRect(25, 10, rect.Width - 50, 40));
             _label.BackgroundColor = UIColor.Clear;
             _label.Font = UIFont.FromName("Raleway-Regular", 32);
             _label.TextColor = "434343".ToUIColor();
@@ -50,7 +49,7 @@ namespace Spelling.Core
 
             _btnRemoveLastChar = new UIButton(UIButtonType.RoundedRect);
             _btnRemoveLastChar.SetTitle("<", UIControlState.Normal);
-            _btnRemoveLastChar.Frame = new RectangleF(rect.Width - 50, 10, 40, 40);
+            _btnRemoveLastChar.Frame = new CGRect(rect.Width - 50, 10, 40, 40);
             _btnRemoveLastChar.TouchUpInside += delegate
             {
                 if (_buttonsUsedInAnswer.Count != 0)
@@ -63,21 +62,21 @@ namespace Spelling.Core
             };
             Add(_btnRemoveLastChar);
 
-            _defaultPositions = new List<RectangleF>();
+            _defaultPositions = new List<CGRect>();
 
-            _defaultPositions.Add(new RectangleF(12, 100, 45, 45));
-            _defaultPositions.Add(new RectangleF(62, 100, 45, 45));
-            _defaultPositions.Add(new RectangleF(112, 100, 45, 45));
-            _defaultPositions.Add(new RectangleF(162, 100, 45, 45));
-            _defaultPositions.Add(new RectangleF(212, 100, 45, 45));
-            _defaultPositions.Add(new RectangleF(262, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(12, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(62, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(112, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(162, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(212, 100, 45, 45));
+            _defaultPositions.Add(new CGRect(262, 100, 45, 45));
 
-            _defaultPositions.Add(new RectangleF(12, 160, 45, 45));
-            _defaultPositions.Add(new RectangleF(62, 160, 45, 45));
-            _defaultPositions.Add(new RectangleF(112, 160, 45, 45));
-            _defaultPositions.Add(new RectangleF(162, 160, 45, 45));
-            _defaultPositions.Add(new RectangleF(212, 160, 45, 45));
-            _defaultPositions.Add(new RectangleF(262, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(12, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(62, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(112, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(162, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(212, 160, 45, 45));
+            _defaultPositions.Add(new CGRect(262, 160, 45, 45));
         }
 
         public override bool Hidden
@@ -91,11 +90,11 @@ namespace Spelling.Core
             }
         }
 
-        public override void Draw(RectangleF rect)
+        public override void Draw(CGRect rect)
         {
             base.Draw(rect);
             UIColor color = "3C3C3C".ToUIColor();
-            UIBezierPath rectanglePath = UIBezierPath.FromRect(new RectangleF(25, 50, rect.Width - 50, 0));
+            UIBezierPath rectanglePath = UIBezierPath.FromRect(new CGRect(25, 50, rect.Width - 50, 0));
             UIColor.White.SetFill();
             rectanglePath.Fill();
             color.SetStroke();
@@ -230,7 +229,7 @@ namespace Spelling.Core
 
         void RemoveButtonFromAnswer(UIButton button)
         {
-            RectangleF frame;
+            CGRect frame;
             frame = _defaultPositions[Convert.ToInt16(button.Tag) - 1];
             Animate(0.2, 0, UIViewAnimationOptions.TransitionCurlUp,
                 () =>
@@ -303,11 +302,11 @@ namespace Spelling.Core
             }
         }
 
-        RectangleF CalculatePosition(int buttonPosition)
+        CGRect CalculatePosition(int buttonPosition)
         {
             //var i = _answer.Length;
             int a = 18 + (18*(buttonPosition));
-            return new RectangleF(a, 15, 28, 28);
+            return new CGRect(a, 15, 28, 28);
         }
 
         #endregion

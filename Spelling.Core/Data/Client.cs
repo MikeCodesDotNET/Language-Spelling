@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Xml.Serialization;
 using System.IO;
 using Spelling.Core.Models;
 using Spelling.Core;
-using MonoTouch.Foundation;
+using Foundation;
 using System.Collections.ObjectModel;
 
 namespace Spelling
