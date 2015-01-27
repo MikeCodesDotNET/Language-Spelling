@@ -51,8 +51,8 @@ namespace Spelling.Core.Views.Screens
             _countdownTimer = new Timer {Interval = 1000};
             _countdownTimer.Elapsed += HandleCountDownElapsed;
 
-            View.BackgroundColor = "F4F4F4".ToUIColor();
-            btnSkipTimer.BackgroundColor = "1ECE6D".ToUIColor();
+            View.BackgroundColor = UIColor.FromRGB(244,244,244);
+            btnSkipTimer.BackgroundColor = UIColor.FromRGB(30,206,109);
             btnSkipTimer.SetTitleColor(UIColor.White, UIControlState.Normal);
             btnSkipTimer.Font = UIFont.FromName("Raleway-SemiBold", 32);
 
@@ -61,7 +61,7 @@ namespace Spelling.Core.Views.Screens
             GetNextVocabulary();
 
             var backButton = new UIButton(UIButtonType.RoundedRect) {Font = UIFont.FromName("Raleway-SemiBold", 18)};
-            backButton.SetTitleColor("646465".ToUIColor(), UIControlState.Normal);
+            backButton.SetTitleColor(UIColor.FromRGB(100, 100, 101), UIControlState.Normal);
             backButton.SetTitle("Back", UIControlState.Normal);
             backButton.Frame = new RectangleF(0, 20, 80, 40);
             backButton.TouchUpInside += delegate { DismissViewController(true, null); };
@@ -116,12 +116,12 @@ namespace Spelling.Core.Views.Screens
             if (value)
             {
                 btnSkipTimer.SetTitle("Next", UIControlState.Normal);
-                btnSkipTimer.BackgroundColor = "1ECE6D".ToUIColor();
+                btnSkipTimer.BackgroundColor = UIColor.FromRGB(30,206,109);
             }
             else
             {
                 btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
-                btnSkipTimer.BackgroundColor = "F2C500".ToUIColor();
+                btnSkipTimer.BackgroundColor = UIColor.FromRGB(242,197,0);
             }
         }
 
@@ -231,7 +231,7 @@ namespace Spelling.Core.Views.Screens
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
-                        btnSkipTimer.BackgroundColor = "F2C500".ToUIColor();
+                        btnSkipTimer.BackgroundColor = UIColor.FromRGB(242,197,0);
                         _answerView.SetTargetWord(_currentWord.Target);
                         ShowAnswerView();
                     });
@@ -254,7 +254,7 @@ namespace Spelling.Core.Views.Screens
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("", UIControlState.Normal);
-                        btnSkipTimer.BackgroundColor = "1ECE6D".ToUIColor();
+                        btnSkipTimer.BackgroundColor = UIColor.FromRGB(30,206,109);
                     });
             });
         }
@@ -276,7 +276,7 @@ namespace Spelling.Core.Views.Screens
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("Skip", UIControlState.Normal);
-                        btnSkipTimer.BackgroundColor = "F2C500".ToUIColor();
+                        btnSkipTimer.BackgroundColor = UIColor.FromRGB(242,197,0);
                         _answerView.SetTargetWord(_currentWord.Native);
                         ShowAnswerView();
                     });
@@ -299,7 +299,7 @@ namespace Spelling.Core.Views.Screens
                     }, () =>
                     {
                         btnSkipTimer.SetTitle("5", UIControlState.Normal);
-                        btnSkipTimer.BackgroundColor = "1ECE6D".ToUIColor();
+                        btnSkipTimer.BackgroundColor = UIColor.FromRGB(30,206,109);
                     });
             });
         }

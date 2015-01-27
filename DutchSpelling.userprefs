@@ -1,0 +1,29 @@
+﻿<Properties StartupItem="DutchSpelling/DutchSpelling.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spelling.Core/Helpers/Extensions.cs">
+    <Files>
+      <File FileName="Spelling.Core/Helpers/Extensions.cs" Line="2" Column="2" />
+      <File FileName="Spelling.Core/Views/Custom Views/AnswerView.cs" Line="10" Column="10" />
+      <File FileName="Spelling.Core/Views/Custom Views/WordView.cs" Line="46" Column="46" />
+      <File FileName="Spelling.Core/Views/Screens/Learn_Vocabulary.cs" Line="51" Column="51" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="DutchSpelling" expanded="True" selected="True" />
+          <Node name="Spelling.Core" expanded="True">
+            <Node name="Helpers" expanded="True" />
+            <Node name="Views" expanded="True">
+              <Node name="Custom Views" expanded="True" />
+              <Node name="Screens" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

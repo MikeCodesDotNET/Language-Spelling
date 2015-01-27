@@ -34,7 +34,7 @@ namespace Spelling.Core
             _title = new UILabel(new RectangleF(0, 45, frame.Width, 50))
             {
                 TextAlignment = UITextAlignment.Center,
-                TextColor = "3C3C3C".ToUIColor(),
+                    TextColor = UIColor.FromRGB(60,60,60),
                 Font = UIFont.FromName("Raleway-SemiBold", 32),
                 Text = title
             };
@@ -44,7 +44,7 @@ namespace Spelling.Core
             _word = new UILabel(new RectangleF(0, 108, frame.Width, 59))
             {
                 TextAlignment = UITextAlignment.Center,
-                TextColor = "3C3C3C".ToUIColor(),
+                TextColor = UIColor.FromRGB(60,60,60),
                 Font = UIFont.FromName("Raleway-Regular", 32),
                 Text = value
             };
@@ -65,7 +65,7 @@ namespace Spelling.Core
             UIView.Animate(0.6, 0, UIViewAnimationOptions.TransitionCurlUp,
                 () =>{
                 _word.Transform = transform;
-                    _title.TextColor = "646465".ToUIColor();
+                    _title.TextColor = UIColor.FromRGB(100, 100, 101);
             },() =>{
                 _word.Font = UIFont.FromName("Raleway-Regular", 48);
                 var transform2 = CGAffineTransform.MakeIdentity();
@@ -82,7 +82,7 @@ namespace Spelling.Core
             UIView.Animate(0.6, 0, UIViewAnimationOptions.TransitionCurlUp,
                 () =>{
                 _word.Transform = transform; 
-                    _title.TextColor = "3C3C3C".ToUIColor();
+                    _title.TextColor = UIColor.FromRGB(60,60,60);
             },() =>{
                 _word.Font = UIFont.FromName("Raleway-Regular", 32);
             });

@@ -45,7 +45,7 @@ namespace Spelling.Core
             _label = new UILabel(new RectangleF(25, 10, rect.Width - 50, 40));
             _label.BackgroundColor = UIColor.Clear;
             _label.Font = UIFont.FromName("Raleway-Regular", 32);
-            _label.TextColor = "434343".ToUIColor();
+            _label.TextColor = UIColor.FromRGB(67, 67, 67);
             Add(_label);
 
             _btnRemoveLastChar = new UIButton(UIButtonType.RoundedRect);
@@ -94,7 +94,7 @@ namespace Spelling.Core
         public override void Draw(RectangleF rect)
         {
             base.Draw(rect);
-            UIColor color = "3C3C3C".ToUIColor();
+            UIColor color = UIColor.FromRGB(60, 60, 60);
             UIBezierPath rectanglePath = UIBezierPath.FromRect(new RectangleF(25, 50, rect.Width - 50, 0));
             UIColor.White.SetFill();
             rectanglePath.Fill();
@@ -102,8 +102,7 @@ namespace Spelling.Core
             rectanglePath.LineWidth = 1.2f;
             rectanglePath.Stroke();
 
-            UIColor squareColour = "9F9F9F".ToUIColor();
-
+            UIColor squareColour = UIColor.FromRGB(159, 159, 159);
             var i = 0;
             while(i < 12)
             {
@@ -122,8 +121,8 @@ namespace Spelling.Core
             {
                 foreach (UIButton b in _buttonsUsedInAnswer)
                 {
-                    b.BackgroundColor = "F4F4F4".ToUIColor();
-                    b.SetTitleColor("434343".ToUIColor(), UIControlState.Normal);
+                    b.BackgroundColor = UIColor.FromRGB(244, 244, 244);
+                    b.SetTitleColor(UIColor.FromRGB(67,67,67), UIControlState.Normal);
                     RemoveButtonFromAnswer(b);
                 }
                 _buttonsUsedInAnswer.Clear();
@@ -237,8 +236,8 @@ namespace Spelling.Core
                 {
                     button.Frame = frame;
                     button.Alpha = 1f;
-                    button.BackgroundColor = "E6E5E7".ToUIColor();
-                    button.SetTitleColor("434343".ToUIColor(), UIControlState.Normal);
+                    button.BackgroundColor = UIColor.FromRGB(230,229,231);
+                    button.SetTitleColor(UIColor.FromRGB(67,67,67), UIControlState.Normal);
                 }, () => { });
             BuildAnswer();
             AdjustPositions();
@@ -259,9 +258,9 @@ namespace Spelling.Core
         UIButton ButtonBuilder(ref UIButton button)
         {
             button.Tag = buttons.Count + 1;
-            button.BackgroundColor = "E6E5E7".ToUIColor();
+            button.BackgroundColor = UIColor.FromRGB(230,229,231);
             button.Font = UIFont.FromName("Raleway-Light", 18);
-            button.SetTitleColor("434343".ToUIColor(), UIControlState.Normal);
+            button.SetTitleColor(UIColor.FromRGB(67,67,67), UIControlState.Normal);
             button.SetTitle("a", UIControlState.Normal);
             button.TouchUpInside += HandleButtonTouchUpInside;
             return button;
