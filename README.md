@@ -40,15 +40,15 @@ You should now have enough in place to try your new language spelling App. You w
 If you're attempting to migrate the classic-api branch to the Unified API using Visual Studio, you may find that it doesn't convert 100% of the API changes for you. The main error you'll see is RectangleF to CGRect which is very easy to resolve. 
 
 ####Original Classic API
-'''CSharp
+'''csharp
 _label = new UILabel(new RectangleF(25, 10, rect.Width - 50, 40));
 '''
 ####After Migration
-'''CSharp
+'''csharp
 _label = new UILabel(new CGRect(25, 10, (CGRect)rect.Width - 50, 40));
 '''
 ####Correct conversion
-'''CSharp
+'''csharp
 _label = new UILabel(new CGRect(25, 10, rect.Width - 50, 40));
 '''
 
