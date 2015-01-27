@@ -35,6 +35,10 @@ If you're looking to create a French version, you will need to do the following:
 *  Add translations to the new vocabulary directory. 
 
 You should now have enough in place to try your new language spelling App. You will of course also need to create the unique artwork and also ensure the provisioning profiles are setup correctly. However It should be noted that you will never need to edit the Core.iOS project unless you want to customise the Apps gameplay or look.
+
+### Visual Studio Migration Tips
+If you're attempting to migrate the classic-api branch to the Unified API using Visual Studio, you may find that it doesn't convert 100% of the API changes for you. The main error you'll see is RectangleF to CGRect which is very easy to resolve. 
+
 ### Related resources 
 * More info [here](http://micjames.co.uk/dutch-spelling/)
 * About Xamarin [here](www.xamarin.com)
