@@ -21,9 +21,8 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>i386</MtouchArch>
     <MtouchLink>None</MtouchLink>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer: Michael James (354MN7UPEZ)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchProfiling>true</MtouchProfiling>
     <MtouchI18n>
     </MtouchI18n>
@@ -96,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\vocabulary\.DS_Store" />
     <BundleResource Include="Resources\vocabulary\Animals.xml" />
     <BundleResource Include="Resources\vocabulary\Careers.xml" />
     <BundleResource Include="Resources\vocabulary\Clothes.xml" />
@@ -124,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
-    <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
