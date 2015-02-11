@@ -100,7 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
-    <BundleResource Include="Resources\vocabulary\.DS_Store" />
     <BundleResource Include="Resources\vocabulary\Animals.xml" />
     <BundleResource Include="Resources\vocabulary\Careers.xml" />
     <BundleResource Include="Resources\vocabulary\Clothes.xml" />
