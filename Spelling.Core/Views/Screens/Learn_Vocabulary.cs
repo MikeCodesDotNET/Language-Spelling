@@ -4,6 +4,7 @@ using System.Timers;
 using UIKit;
 using Spelling.Core;
 using Spelling.Core.Models;
+using System.Collections.Generic;
 
 namespace Spelling.Core.Views.Screens
 {
@@ -134,6 +135,15 @@ namespace Spelling.Core.Views.Screens
             if ((btnSkipTimer.Title(UIControlState.Normal) != "Skip") &&
                 (btnSkipTimer.Title(UIControlState.Normal) != "Next")) return;
 
+            if (btnSkipTimer.Title(UIControlState.Normal) == "Skip")
+            {
+                Xamarin.Insights.Track("Skipped Test", new Dictionary<string, string> {
+                    {"Native", _currentWord.Native },
+                    {"Target", _currentWord.Target},
+                    {"Response", _answerView.Text}
+                });
+            }
+
             GetNextVocabulary();
 
             _answerView.Reset();
@@ -143,10 +153,22 @@ namespace Spelling.Core.Views.Screens
                 RestoreViewFromTestAgainstNative();
             else
                 RestoreViewFromTestAgainTarget();
+
         }
 
         void HandleCountDownElapsed(object sender, ElapsedEventArgs e)
         {
+
+            #if DEBUG
+            if(_countDownValue == 0)
+            {
+                _countdownTimer.Stop();
+                TestAgainstNative();
+                InvokeOnMainThread(delegate { btnSkipTimer.SetTitle(_countDownValue.ToString(), UIControlState.Normal); });
+                return;
+            }
+            #endif
+
             if (_countDownValue == 0)
             {
                 _countdownTimer.Stop();
@@ -167,6 +189,11 @@ namespace Spelling.Core.Views.Screens
         void GetNextVocabulary()
         {
             var i = Extensions.RandomNumberBetween(0, SelectedLanguagePack.Words.Count);
+
+            #if DEBUG
+            i = 0;
+            #endif
+
             if (i <= SelectedLanguagePack.Words.Count - 1)
             {
                 SelectedLanguagePack.SelectWord(i);

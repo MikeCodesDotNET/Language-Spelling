@@ -1,12 +1,24 @@
-﻿<Properties StartupItem="DutchSpelling/DutchSpelling.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DutchSpelling/AppDelegate.cs">
+﻿<Properties StartupItem="TestCloud/DutchSpelling.iOS.UITests.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Spelling.Core/Views/Screens/Learn_Vocabulary.cs">
     <Files>
-      <File FileName="DutchSpelling/AppDelegate.cs" Line="16" Column="16" />
+      <File FileName="DutchSpelling/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/iOS/Xamarin.iOS.Common.targets" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Data/Client.cs" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Models/LanguagePack.cs" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Helpers/Extensions.cs" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Views/Custom Views/WordView.cs" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Views/Custom Views/AnswerView.cs" Line="1" Column="1" />
+      <File FileName="Spelling.Core/Views/Screens/Learn_Vocabulary.cs" Line="39" Column="1" />
+      <File FileName="Spelling.Core/Models/Word.cs" Line="1" Column="1" />
+      <File FileName="TestCloud/UITest.cs" Line="1" Column="1" />
+      <File FileName="TestCloud/packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/mikejames/Git/Language-Spelling/Spelling.Core/Views/Screens/Learn_Vocabulary.cs" line="163" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

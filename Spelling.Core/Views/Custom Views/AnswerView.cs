@@ -79,6 +79,14 @@ namespace Spelling.Core
             _defaultPositions.Add(new CGRect(262, 160, 45, 45));
         }
 
+        public string Text
+        {
+            get
+            {
+                return _answer;
+            }
+        }
+
         public override bool Hidden
         {
             get { return base.Hidden; }
