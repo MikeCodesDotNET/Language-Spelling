@@ -6,7 +6,7 @@
   </Word>
   <Word>
     <Native>bee</Native>
-    <Target>honingbij</Target>
+    <Target>bij</Target>
   </Word>
   <Word>
     <Native>ape</Native>
@@ -14,7 +14,7 @@
   </Word>
   <Word>
     <Native>bear</Native>
-    <Target>bear</Target>
+    <Target>beer</Target>
   </Word>
   <Word>
     <Native>baboon</Native>
@@ -53,8 +53,8 @@
     <Target>haan</Target>
   </Word>
   <Word>
-    <Native>chipmunch</Native>
-    <Target>chipmunch</Target>
+    <Native>chipmunk</Native>
+    <Target>wangzakeekhoorn</Target>
   </Word>
   <Word>
     <Native>cobra</Native>
@@ -70,7 +70,7 @@
   </Word>
   <Word>
     <Native>dinosaur</Native>
-    <Target>dinosaur</Target>
+    <Target>dinosaurus</Target>
   </Word>
   <Word>
     <Native>dog</Native>
@@ -110,7 +110,7 @@
   </Word>
   <Word>
     <Native>giraffe</Native>
-    <Target>giraffe</Target>
+    <Target>giraf</Target>
   </Word>
   <Word>
     <Native>goat</Native>
@@ -126,11 +126,11 @@
   </Word>
   <Word>
     <Native>hen</Native>
-    <Target>kip</Target>
+    <Target>hen</Target>
   </Word>
   <Word>
     <Native>hog</Native>
-    <Target>varken</Target>
+    <Target>zwijn</Target>
   </Word>
   <Word>
     <Native>hornet</Native>
@@ -194,7 +194,7 @@
   </Word>
   <Word>
     <Native>sheep</Native>
-    <Target>schapen</Target>
+    <Target>schaap</Target>
   </Word>
   <Word>
     <Native>skunk</Native>
@@ -218,7 +218,7 @@
   </Word>
   <Word>
     <Native>turkey</Native>
-    <Target>turkije</Target>
+    <Target>kalkoen</Target>
   </Word>
   <Word>
     <Native>turtle</Native>
